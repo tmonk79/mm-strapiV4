@@ -1,5 +1,6 @@
 version: '3'
 services:
+
   nginx:
     image: mm-nginx
     build:
@@ -16,12 +17,14 @@ services:
       context: ./backend/strapiV4
       dockerfile: Dockerfile.dev
     volumes:
-      - ./backend/strapiV4/src/strapi/src
-      - ./backend/strapiV4/config/strapi/config
+      - ./backend/strapiV4/src:/strapi/src
+      - ./backend/strapiV4/config:/strapi/config
     env_file:
       - .env.dev
     depends_on:
       - mysql
+      - nginx
+      - redis
 
   mysql:
     image: mysql:8.0
@@ -31,5 +34,15 @@ services:
       - ./data:/var/lib/mysql
     ports:
       - '3306:3306'
+    env_file:
+      - .env.dev
+
+  redis:
+    image: redis:6.0-alpine
+    platform: linux/x86_64
+    volumes:
+      - ./redis-data:/data
+    ports:
+      - '6379:6379'
     env_file:
       - .env.dev
