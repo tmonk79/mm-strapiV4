@@ -1,0 +1,11 @@
+**node_modules**
+**.vscode**
+/data
+/nginx/build
+/redis-data
+/meilisearch
+**.env**
+.DS_Store
+*crt*
+*key*
+*csr*
