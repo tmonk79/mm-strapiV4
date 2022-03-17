@@ -4,7 +4,8 @@
   "info": {
     "singularName": "car",
     "pluralName": "cars",
-    "displayName": "Car"
+    "displayName": "Car",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -23,18 +24,11 @@
     "turbo": {
       "type": "boolean"
     },
-    "car_img": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
-    },
     "mileage": {
       "type": "integer"
+    },
+    "img_url": {
+      "type": "string"
     }
   }
 }
