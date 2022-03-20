@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recipe_ingredients",
+  "info": {
+    "singularName": "recipe-ingredient",
+    "pluralName": "recipe-ingredients",
+    "displayName": "Recipe_Ingredients"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Product_Title": {
+      "type": "string"
+    },
+    "Ingredient": {
+      "type": "component",
+      "repeatable": true,
+      "component": "recipe-details.ingredients"
+    },
+    "recipes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::recipe.recipe",
+      "inversedBy": "Recipe_Ingredients"
+    }
+  }
+}

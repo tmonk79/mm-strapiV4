@@ -28,7 +28,6 @@ redis: {
       strategy: {
         contentTypes: [
           // list of Content-Types UID to cache
-          "api::car.car",
         ],
       },
     },

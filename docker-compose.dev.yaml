@@ -25,6 +25,7 @@ services:
       - mysql
       - nginx
       - redis
+      - meilisearch
 
   mysql:
     image: mysql:8.0
@@ -46,3 +47,11 @@ services:
       - '6379:6379'
     env_file:
       - .env.dev
+
+  meilisearch:
+    image: getmeili/meilisearch
+    command: ./meilisearch
+    volumes:
+      - ./meilisearch/data.ms:/data.ms
+    ports:
+      - "7700:7700"

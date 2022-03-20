@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_recipe_details_ingredients",
+  "info": {
+    "displayName": "Ingredients",
+    "icon": "baby-carriage",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Ingredient_Title": {
+      "type": "string"
+    },
+    "Ingredient_List": {
+      "displayName": "Ingredient_List",
+      "type": "component",
+      "repeatable": true,
+      "component": "recipe-details.ingredient-list"
+    } 
+  } 
+}

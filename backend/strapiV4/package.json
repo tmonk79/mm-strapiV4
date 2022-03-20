@@ -9,12 +9,12 @@
     "build": "strapi build --no-optimization",
     "strapi": "strapi"
   },
-  "devDependencies": {},
   "dependencies": {
     "@strapi/plugin-i18n": "4.1.4",
     "@strapi/plugin-users-permissions": "4.1.4",
     "@strapi/strapi": "4.1.4",
     "mysql": "2.18.1",
+    "strapi-plugin-meilisearch": "^0.6.2",
     "strapi-plugin-redis": "^1.0.0-alpha.2",
     "strapi-plugin-rest-cache": "^4.2.2",
     "strapi-provider-rest-cache-redis": "^4.2.2"

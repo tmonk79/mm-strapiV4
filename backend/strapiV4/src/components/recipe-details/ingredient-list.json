@@ -1,0 +1,71 @@
+{
+  "collectionName": "components_recipe_details_ingredient_lists",
+  "info": {
+    "displayName": "Ingredient_List",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Metric_Value": {
+      "type": "string"
+    },
+    "Metric_Unit": {
+      "type": "enumeration",
+      "enum": [
+        "g",
+        "l",
+        "ml",
+        "tsp",
+        "cups",
+        "tbsp",
+        "packets",
+        "packet",
+        "drops",
+        "cup",
+        "lt",
+        "tin",
+        "nos",
+        "pinch of",
+        "pinch",
+        "bars",
+        "glass",
+        "bowl",
+        "scoop"
+      ]
+    },
+    "Imperial_Value": {
+      "type": "string"
+    },
+    "Imperial_Unit": {
+      "type": "enumeration",
+      "enum": [
+        "g",
+        "l",
+        "ml",
+        "tsp",
+        "cups",
+        "tbsp",
+        "packets",
+        "packet",
+        "drops",
+        "cup",
+        "lt",
+        "tin",
+        "nos",
+        "pinch of",
+        "pinch",
+        "bars",
+        "glass",
+        "bowl",
+        "scoop"
+      ]
+    },
+    "Buy_Url": {
+      "type": "text"
+    },
+    "Ingredient_Label": {
+      "type": "string"
+    }
+  }
+}

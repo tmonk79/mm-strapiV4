@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * car router.
+ * recipe router.
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::car.car');
+module.exports = createCoreRouter('api::recipe.recipe');

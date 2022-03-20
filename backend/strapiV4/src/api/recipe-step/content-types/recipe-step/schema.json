@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recipe_Steps",
+  "info": {
+    "singularName": "recipe-step",
+    "pluralName": "recipe-steps",
+    "displayName": "Recipe_Steps",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Product_Title": {
+      "type": "string"
+    },
+    "StepsComponent": {
+      "type": "component",
+      "repeatable": true,
+      "component": "recipe-details.steps-component"
+    },
+    "Recipes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::recipe.recipe",
+      "mappedBy": "Recipe_Steps"
+    }
+  }
+}
