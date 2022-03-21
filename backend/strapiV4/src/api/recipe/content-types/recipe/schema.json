@@ -4,7 +4,7 @@
   "info": {
     "singularName": "recipe",
     "pluralName": "recipes",
-    "displayName": "Recipes",
+    "displayName": "Recipe",
     "description": ""
   },
   "options": {
@@ -75,7 +75,13 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::recipe-ingredient.recipe-ingredient",
-      "inversedBy": "recipes"
+      "mappedBy": "recipes"
+    },
+    "Recipe_Steps": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::recipe-step.recipe-step",
+      "inversedBy": "Recipes"
     }
   }
 }
