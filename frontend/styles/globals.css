@@ -64,3 +64,52 @@ button {
 main{
   margin: 20px
 }
+
+.auth {
+  margin: 3rem auto;
+  width: 95%;
+  max-width: 25rem;
+  border-radius: 6px;
+  background-color: #38015c;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  text-align: center;
+}
+
+
+li {
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 1px 2px 3px 4px rgba(12,12,12,0.2);
+  margin-left: 10px;
+  list-style: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.loginButton {
+  display: flex;
+  justify-content: flex-end;
+  padding: 11px;
+  cursor: pointer;
+}
+
+button {
+  font: inherit;
+    color: white;
+    background-color: #9f5ccc;
+    border: 1px solid #9f5ccc;
+    border-radius: 4px;
+    padding: 0.5rem 2.5rem;
+}

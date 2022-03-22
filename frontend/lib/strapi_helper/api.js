@@ -1,3 +1,4 @@
+import https from 'https'
 
 export function getStrapiURL(path = "") {
     return `${
@@ -8,11 +9,16 @@ export function getStrapiURL(path = "") {
   // Helper to make GET requests to Strapi
   export async function fetchAPI(path,token) {
     const requestUrl = getStrapiURL(path);
+    const httpsAgent = new https.Agent({  
+      rejectUnauthorized: false
+    });
     const response = await fetch(requestUrl, {
         method: 'get',
         headers: {
-            Authorization: "Bearer "+token
-        }
+              Authorization: "Bearer "+token,
+             
+          },
+          agent: httpsAgent,
     });
     const data = await response.json();
     return data;
