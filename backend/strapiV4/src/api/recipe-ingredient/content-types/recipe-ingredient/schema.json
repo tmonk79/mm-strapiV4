@@ -4,7 +4,8 @@
   "info": {
     "singularName": "recipe-ingredient",
     "pluralName": "recipe-ingredients",
-    "displayName": "Recipe_Ingredients"
+    "displayName": "Ingredient",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true

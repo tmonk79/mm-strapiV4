@@ -4,7 +4,7 @@
   "info": {
     "singularName": "recipe-step",
     "pluralName": "recipe-steps",
-    "displayName": "Recipe_Steps",
+    "displayName": "Step",
     "description": ""
   },
   "options": {
