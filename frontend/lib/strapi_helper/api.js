@@ -1,9 +1,7 @@
 import https from 'https'
 
 export function getStrapiURL(path = "") {
-    return `${
-      process.env.STRAPI_API || "https://api.dessertcorner.com"
-    }${path}`;
+    return `${process.env.STRAPI_API}${path}`;
   }
   
   // Helper to make GET requests to Strapi

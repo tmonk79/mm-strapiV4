@@ -8,10 +8,6 @@ import axios from 'axios'
 const HomePage = ({homepageContent}) => {
   const router = useRouter();
 
-  console.log("homepageContent")
-  console.log(homepageContent)
-  console.log("homepageContent End ")
-
   const logout = async () => {
     try {
       await axios.get('/api/auth/signout');
@@ -48,10 +44,10 @@ const HomePage = ({homepageContent}) => {
 
 export async function getServerSideProps(context) {
   const cookies = nookies.get(context)
-  console.log(cookies.jwt)
+  // console.log(cookies.jwt)
   
   const [homepageContent] = await Promise.all([
-    fetchAPI(`${process.env.STRAPI_API}/recipes`, cookies.jwt)
+    fetchAPI('/recipes', cookies.jwt)
   ]);
 
   return {

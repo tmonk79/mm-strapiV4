@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const ListItem = (props) => {
     const {items} = props
-    console.log(items.attributes)
+    // console.log(items.attributes)
     return <li className={classes.li} key={items.id}>
                 
                     <div>
