@@ -1,5 +1,5 @@
 module.exports = {
   images: {
-    domains: ['localhost', 'api.dessertcorner.com'],
+					domains: ['https://api.dessertcorner.com'],
   },
 }

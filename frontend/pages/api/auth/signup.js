@@ -9,7 +9,7 @@ export default async (req, res) => {
         const agent = new https.Agent({  
         rejectUnauthorized: false
       });
-    const response = await axios.post('https://api.dessertcorner.com/api/auth/local/register', {
+    const response = await axios.post(`${process.env.STRAPI_API}/auth/local/register`, {
       username,
       email,
       password,

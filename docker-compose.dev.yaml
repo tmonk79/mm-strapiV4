@@ -1,5 +1,18 @@
 version: '3'
+
 services:
+  next:
+    image: mm-next
+    build:
+      context: ./frontend
+    restart: always
+    ports:
+      - 3000:3000
+    volumes:
+      - ./frontend:/app
+    depends_on:
+      - strapi
+      - mysql
 
   nginx:
     image: mm-nginx

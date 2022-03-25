@@ -36,7 +36,7 @@ const Hit = ({ hit }) => (
       height={500}
     />
     </div> } */}
-    <img src={`https://api.dessertcorner.com${hit.Image[0].url}`} />
+    <img src={`https://api.dessertcorner.com{hit.Image[0].url}`} />
   
   </div>
 );

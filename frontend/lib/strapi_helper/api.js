@@ -2,7 +2,7 @@ import https from 'https'
 
 export function getStrapiURL(path = "") {
     return `${
-      process.env.NEXT_PUBLIC_STRAPI_API_URL || "https://api.dessertcorner.com"
+      process.env.STRAPI_API || "https://api.dessertcorner.com"
     }${path}`;
   }
   
@@ -18,7 +18,7 @@ export function getStrapiURL(path = "") {
               Authorization: "Bearer "+token,
              
           },
-          agent: httpsAgent,
+          // agent: httpsAgent,
     });
     const data = await response.json();
     return data;

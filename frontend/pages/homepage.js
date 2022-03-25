@@ -51,7 +51,7 @@ export async function getServerSideProps(context) {
   console.log(cookies.jwt)
   
   const [homepageContent] = await Promise.all([
-    fetchAPI("/api/recipes", cookies.jwt)
+    fetchAPI(`${process.env.STRAPI_API}/recipes`, cookies.jwt)
   ]);
 
   return {

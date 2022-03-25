@@ -18,7 +18,7 @@ export const getServerSideProps = async (ctx) => {
       });
     if (cookies?.jwt) {
       try {
-        const { data } = await axios.get('https://api.dessertcorner.com/api/users/me', {
+        const { data } = await axios.get(`${process.env.STRAPI_API}/users/me`, {
           headers: {
             Authorization:
               `Bearer ${cookies.jwt}`,
