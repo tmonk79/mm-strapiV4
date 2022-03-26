@@ -22,6 +22,7 @@ openssl req -x509 -out localhost.crt -keyout localhost.key \
 - update hostfile /etc/hosts and add this entry
   - 127.0.0.0 api.dessertcorner.com
   - 127.0.0.0 admin.dessertcorner.com
+	- 127.0.0.0 dessertcorner.com
 - cd to ./backend/strapi
   - run `./build.sh`
 - create .env file in ./backend/strapiV4

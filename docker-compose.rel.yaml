@@ -6,8 +6,6 @@ services:
     build:
       context: ./frontend
     restart: always
-    ports:
-      - 3000:3000
     env_file:
       - .env.rel
     depends_on:
